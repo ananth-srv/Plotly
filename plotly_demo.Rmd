@@ -1,0 +1,25 @@
+---
+title: "plotly Demo"
+author: "Vijay"
+date: "May 8, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE) 
+library(plotly)
+```
+
+## Introduction
+
+This presentation is all about a demo on using Plotly to create a time series plot. I wil be creating a graph using the airpassenger dataset.
+
+
+## Slide with R Output
+
+```{r cars, echo = FALSE}
+plot_ly (x = time(AirPassengers), y = AirPassengers, type = "scatter", mode = "lines") %>% 
+  layout(title = "Air passengers time Series")
+```
+
+##Thank You
